@@ -39,7 +39,8 @@ The label is the aqi column.
 How to Run:
 -----
 
-Submit `main.py` to spark-submit or run `python3 main.py` given that Spark, PySpark 2.4.3 and Python 3.7.4 are installed. 
+Submit `main.py` to spark-submit or run `main.py` given that Spark, PySpark 2.4.3 and Python 3.7.4 are installed.
 
 ```SQLContext(SparkContext()).sql("SELECT * FROM parquet.`output/beijing_features_aqi_target.parquet`")```
 will query a dataframe of the saved parquet file.
+A pre-generated parquet file is in the output directory in case the script doesn't run for whatever reason.
